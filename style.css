@@ -5,6 +5,11 @@
   --weak-serif: "Roboto", serif;
 }
 
+header {
+  padding-top: 40px;
+  padding-bottom: 38px;
+}
+
 .container {
   width: 1380px;
   margin: auto;
@@ -12,8 +17,11 @@
 
 header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+header a.logo {
+  padding-right: 120px;
 }
 
 header ul {
@@ -29,11 +37,13 @@ header li {
   font-size: 19px;
   line-height: 32px;
   color: var(--color);
+  padding-right: 40px;
 }
 
 header .basket {
   display: flex;
   align-items: center;
+  padding-left: 336px;
 }
 
 .basket p {
@@ -43,13 +53,16 @@ header .basket {
   font-size: 17px;
   line-height: 29px;
   color: var(--color);
+  padding-left: 10px;
 }
 
 .welcome {
   background-image: url(img/img/background-welcome.png);
+  background-repeat: no-repeat;
   width: 1440px;
   height: 930px;
   margin: auto;
+  padding-bottom: 142px;
 }
 
 .welcome h3 {
@@ -59,6 +72,8 @@ header .basket {
   font-size: 36px;
   line-height: 65px;
   color: var(--weak-color);
+  margin: 0;
+  padding-top: 220px;
 }
 
 .welcome h2 {
@@ -68,7 +83,9 @@ header .basket {
   font-size: 70px;
   line-height: 84px;
   color: var(--color);
-  max-width: 44%;
+  max-width: 496px;
+  margin: 0;
+  padding-top: 14px;
 }
 
 .welcome button {
@@ -80,6 +97,8 @@ header .basket {
   height: 82px;
   background-color: #EFD372;
   border-radius: 10px;
+  margin-top: 30px;
+  padding: 0;
 }
 
 .welcome p {
@@ -88,11 +107,28 @@ header .basket {
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
+  margin: 0;
+  padding-left: 33px;
+}
+
+.adventising {
+  padding-bottom: 140px;
 }
 
 .adventising .container {
   display: flex;
   justify-content: space-between;
+}
+
+.adventising p {
+  margin: 0;
+  padding-top: 105px;
+  padding-left: 55px;
+}
+
+.adventising h4 {
+  margin: 0;
+  padding-left: 55px;
 }
 
 .adventising .natural {
@@ -142,7 +178,7 @@ header .basket {
   font-size: 40px;
   line-height: 52px;
   color: var(--color);
-  max-width: 45%;
+  max-width: 255px;
 }
 
 .about_us {
@@ -150,10 +186,21 @@ header .basket {
   width: 1440px;
   height: 1006px;
   margin: auto;
+  margin-bottom: 120px;
 }
 
 .about_us .container {
   display: flex;
+}
+
+.about_us .background_about_us {
+  padding-top: 177px;
+}
+
+.about_us .column {
+  padding-left: 30px;
+  padding-top: 130px;
+  padding-left: 30px;
 }
 
 .about_us h2 {
@@ -163,6 +210,7 @@ header .basket {
   font-size: 36px;
   line-height: 65px;
   color: var(--weak-color);
+  margin: 0;
 }
 
 .about_us h3 {
@@ -172,7 +220,42 @@ header .basket {
   font-size: 45px;
   line-height: 58px;
   color: var(--color);
-  max-width: 70%;
+  max-width: 521px;
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.about_us h5 {
+  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #525C60;
+  margin: 0;
+  max-width: 650px;
+  padding-bottom: 56px;
+}
+
+
+.about_us .row {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.about_us .name {
+  padding-left: 20px;
+}
+
+.about_us h4 {
+  font-family: var(--weak-serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--color);
+  margin: 0;
+  padding-bottom: 9px;
 }
 
 .about_us p {
@@ -183,36 +266,28 @@ header .basket {
   line-height: 32px;
   color: #525C60;
   margin: 0;
-  min-width: 91%;
-  margin-bottom: 10px;
-}
-
-.about_us .row {
-  display: flex;
-}
-
-.about_us h4 {
-  font-family: var(--weak-serif);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 35px;
-  color: var(--weak-color);
-  margin: 0;
+  max-width: 511px;
 }
 
 .about_us button {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 199px;
   height: 82px;
-  background-color:var(--color);
+  background-color: var(--color);
   border-radius: 10px;
+  margin-top: 50px;
 }
 
 .about_us button p {
   color: white;
+  padding-left: 33px;
+  padding-right: 25px;
+
+}
+
+.products {
+  padding-bottom: 140px;
 }
 
 .products h3 {
@@ -235,6 +310,7 @@ header .basket {
   color: var(--color);
   text-align: center;
   margin: 0;
+  padding-bottom: 40px;
 }
 
 .products .product {
@@ -263,6 +339,12 @@ header .basket {
   padding: 5px 20px;
   background-color: var(--color);
   border-radius: 6px;
+  margin-left: 33px;
+  margin-top: 30px;
+}
+
+.products img:first-child {
+  padding-left: 30px;
 }
 
 .products h4 {
@@ -272,12 +354,15 @@ header .basket {
   font-size: 22px;
   line-height: 35px;
   color: var(--color);
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 .products hr {
   width: 387px;
   margin: auto;
-  columns: #D4D4D4;
+  color: black;
   margin: 0;
   border: 0;
   height: 2px;
@@ -285,8 +370,9 @@ header .basket {
 
 .products .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+  padding-left: 30px;
 }
 
 .products h5 {
@@ -297,11 +383,13 @@ header .basket {
   line-height: 32px;
   color: var(--color);
   margin: 0;
+  padding-right: 50px;
 }
 
 .products span {
   color: #B8B8B8;
   text-decoration: line-through;
+  padding-right: 10px;
 }
 
 .Testimonial {
@@ -322,6 +410,8 @@ header .basket {
   font-size: 36px;
   line-height: 65px;
   color: var(--weak-color);
+  padding-top: 130px;
+  margin: 0;
 }
 
 .Testimonial h2 {
@@ -331,6 +421,16 @@ header .basket {
   font-size: 45px;
   line-height: 58px;
   color: var(--color);
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.Testimonial img.people {
+  padding-bottom: 18px;
+}
+
+.Testimonial .stars {
+  padding-bottom: 30px;
 }
 
 .Testimonial h4 {
@@ -339,7 +439,10 @@ header .basket {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
+  max-width: 900px;
+  margin: auto;
   color: #525C60;
+  padding-bottom: 23px;
 }
 
 .Testimonial h5 {
@@ -349,6 +452,7 @@ header .basket {
   font-size: 26px;
   line-height: 34px;
   color: var(--color);
+  margin: 0;
 }
 
 .Testimonial p {
@@ -358,11 +462,12 @@ header .basket {
   font-size: 14px;
   line-height: 27px;
   color: #525C60;
+  margin: 0;
+  padding-bottom: 197px;
 }
 
 .Testimonial .row {
   display: flex;
-  justify-content: space-around;
 }
 
 .Testimonial h6 {
@@ -379,7 +484,12 @@ header .basket {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  ;
+  margin: 0;
+  margin-right: 26px;
+}
+
+.Testimonial h6:first-child {
+  margin-left: 130px;
 }
 
 .Testimonial h6 span {
@@ -593,7 +703,7 @@ header .basket {
 
 .discover .info {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .discover .columns {
@@ -604,7 +714,7 @@ header .basket {
   margin-top: 250px;
   margin-left: 30px;
   box-shadow: 3px 2px 3px 2px#EEEEEE;
-  
+
 }
 
 .discover .column:first-child {
@@ -654,8 +764,8 @@ header .basket {
 }
 
 .discover .second {
-display: flex;
-background-color: white;
+  display: flex;
+  background-color: white;
 }
 
 .subscribe .container {

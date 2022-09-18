@@ -40,10 +40,22 @@ header li {
   padding-right: 40px;
 }
 
+header li:hover {
+  color: var(--weak-color);
+}
+
 header .basket {
   display: flex;
   align-items: center;
-  padding-left: 336px;
+  margin-left: 336px;
+  border: 1px solid #D4D4D4;
+  border-radius: 33px;
+}
+
+.basket a {
+  padding-left: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .basket p {
@@ -54,6 +66,11 @@ header .basket {
   line-height: 29px;
   color: var(--color);
   padding-left: 10px;
+  padding-right: 28px;
+}
+
+.basket p:hover {
+  color: var(--weak-color);
 }
 
 .welcome {
@@ -99,6 +116,10 @@ header .basket {
   border-radius: 10px;
   margin-top: 30px;
   padding: 0;
+}
+
+.welcome button p:hover {
+  color:var(--weak-color);
 }
 
 .welcome p {
@@ -283,7 +304,10 @@ header .basket {
   color: white;
   padding-left: 33px;
   padding-right: 25px;
+}
 
+.about_us button p:hover {
+  color: var(--weak-color);
 }
 
 .products {
@@ -361,11 +385,10 @@ header .basket {
 
 .products hr {
   width: 387px;
+  height: 1px;
   margin: auto;
-  color: black;
-  margin: 0;
-  border: 0;
-  height: 2px;
+  background-color: #D4D4D4;
+ border: none;
 }
 
 .products .row {
@@ -463,7 +486,16 @@ header .basket {
   line-height: 27px;
   color: #525C60;
   margin: 0;
-  padding-bottom: 197px;
+  padding-bottom: 96px;
+}
+
+.Testimonial hr {
+width: 966px;
+padding: 1px;
+margin: auto;
+background-color: #E0E0E0;
+border: none;
+margin-bottom: 100px;
 }
 
 .Testimonial .row {
@@ -500,8 +532,7 @@ header .basket {
   color: var(--color);
 }
 
-.offer .container {
-  width: 1440px;
+.offer {
   height: 1060px;
   background-color: var(--color);
   margin: auto;
@@ -542,7 +573,7 @@ header .basket {
   border-radius: 10px;
 }
 
-.offer .product p {
+.offer button p {
   font-family: var(--weak-serif);
   font-style: normal;
   font-weight: 400;
@@ -552,9 +583,13 @@ header .basket {
   margin: 0;
 }
 
+.offer button p:hover {
+  color: var(--weak-color);
+}
+
 .offer .product {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .offer .column {
@@ -576,6 +611,8 @@ header .basket {
   padding: 6px 20px;
   background-color: var(--color);
   border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .offer .product h4 {
@@ -585,21 +622,24 @@ header .basket {
   font-size: 21px;
   line-height: 35px;
   color: var(--color);
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 30px;
 }
 
 .offer hr {
   width: 387px;
   margin: auto;
-  color: #D4D4D4;
-  margin: 0;
-  border: 0;
+  background-color: #D4D4D4;
+  margin: auto;
+  border: none;
   height: 2px;
 }
 
 .offer .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
 }
 
 .offer h5 {
@@ -610,11 +650,17 @@ header .basket {
   line-height: 32px;
   color: var(--color);
   margin: 0;
+  padding-right: 87px;
 }
 
 .offer span {
   color: #B8B8B8;
   text-decoration: line-through;
+  padding-right: 10px;
+}
+
+.picture {
+  padding-bottom: 130px;
 }
 
 .picture .container {
@@ -636,6 +682,10 @@ header .basket {
   background-image: url(img/img/FRUIT-picture.png);
 }
 
+.picture .card h4:hover {
+  box-shadow: 0px 0px 3px 3px var(--weak-color);
+}
+
 .picture .card:first-child {
   background-image: url(img//img/organic-food-picture.png);
 }
@@ -654,11 +704,15 @@ header .basket {
   background-color: white;
   border-radius: 16px;
 }
+.discover {
+  padding-bottom: 157px;
+}
 
 .discover .names {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 106px;
 }
 
 .discover h2 {
@@ -701,6 +755,10 @@ header .basket {
   color: var(--color);
 }
 
+.discover .first p:hover {
+  color: var(--weak-color);
+}
+
 .discover .info {
   display: flex;
   justify-content: space-around;
@@ -714,7 +772,6 @@ header .basket {
   margin-top: 250px;
   margin-left: 30px;
   box-shadow: 3px 2px 3px 2px#EEEEEE;
-
 }
 
 .discover .column:first-child {
@@ -731,7 +788,9 @@ header .basket {
 
 .discover .people {
   display: flex;
-  justify-content: start;
+  padding-top: 53px;
+  padding-left: 30px;
+  padding-bottom: 13px;
 }
 
 .discover .column p {
@@ -752,6 +811,8 @@ header .basket {
   line-height: 35px;
   color: var(--color);
   margin: 0;
+  padding-left: 30px;
+  padding-bottom: 38px;
 }
 
 .discover h4 {
@@ -761,11 +822,34 @@ header .basket {
   font-size: 18px;
   line-height: 32px;
   color: #525C60;
+  margin: 0;
+  max-width: 440px;
+  padding-left: 30px;
+  padding-bottom: 22px;
 }
 
 .discover .second {
   display: flex;
   background-color: white;
+}
+
+.discover .second h5 {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+margin: 0;
+padding-bottom: 0;
+padding-right: 10px;
+}
+
+.discover .second h5:hover {
+  color: var(--weak-color);
+}
+
+.subscribe {
+  padding-bottom: 183px;
 }
 
 .subscribe .container {
@@ -784,6 +868,8 @@ header .basket {
   color: white;
   padding-left: 70px;
   max-width: 40%;
+  margin: 0;
+  padding-top: 100px;
 }
 
 .subscribe .form {
@@ -795,7 +881,7 @@ header .basket {
   padding: 26px 101px 26px 30px;
   border-radius: 10px;
   font-family: var(--serif);
-  color: #525C60А;
+  color: #525C60;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -810,6 +896,8 @@ header .basket {
   align-items: center;
   background-color: var(--color);
   border-radius: 10px;
+  margin-right: 80px;
+  margin-left: 10px;
 }
 
 .subscribe p {
@@ -821,6 +909,9 @@ header .basket {
   color: white;
 }
 
+.subscribe p:hover {
+  color: var(--weak-color);
+}
 
 footer .row {
   display: flex;
@@ -839,10 +930,35 @@ footer .column:first-child {
   text-align: right;
 }
 
+footer .column:first-child h4 {
+  padding-top: 38px;
+}
+footer .column:first-child p {
+  padding-top: 5px;
+}
+
+footer .column:nth-child(2) p {
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+footer .column:nth-child(2) a {
+  padding-right: 20px;
+}
+
+
 footer .column:last-child {
   width: 335px;
   height: 369px;
   text-align: left;
+}
+
+footer .column:last-child h2 {
+  padding-bottom: 20px;
+}
+
+footer .column:last-child p {
+  padding-bottom: 24px;
 }
 
 footer h2 {
@@ -852,6 +968,7 @@ footer h2 {
   font-size: 30px;
   line-height: 42px;
   color: var(--color);
+  margin: 0;
 }
 
 footer h4 {
@@ -881,11 +998,12 @@ footer .center {
 
 footer hr {
   width: 1440px;
-  color: #D4D4D4;
+  height: 1px;
+  background-color: #D5D5D5;
+  border: none;
 
 }
 
-/*почему текст не стал на место*/
-footer .row:last-child {
+footer .copyright p{
   text-align: center;
 }
